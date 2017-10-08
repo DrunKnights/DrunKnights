@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hackucf.drunknights.MainActivity">
+
+    <TextView
+        android:id="@+id/profile"
+        android:background="#DD2C00"
+        android:textColor="@android:color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:onClick="openProfile"
+        android:text="Profile" />
+
+    <TextView
+        android:id="@+id/addDrink"
+        android:background="#FF6D00"
+        android:textColor="@android:color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:onClick="addDrink"
+        android:text="Add Drink" />
+
+    <TextView
+        android:id="@+id/about"
+        android:background="#FFAB00"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:onClick="openAbout"
+        android:text="About" />
+
+    <TextView
+        android:background="@drawable/background_beer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:textColor="@android:color/black"
+        android:textSize="46sp"
+        android:paddingLeft="120dp"
+        android:paddingTop="80dp"
+        android:text="BAC" />
+
+
+
+</LinearLayout>

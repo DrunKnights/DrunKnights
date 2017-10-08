@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="org.hackucf.drunknights.addDrink">
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="85dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_alignTop="@+id/results"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/searchBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="searchDrink"
+            android:text="Search"
+            tools:layout_editor_absoluteX="148dp"
+            android:layout_marginTop="29dp"
+            app:layout_constraintTop_toBottomOf="@+id/searchText"
+            android:layout_below="@+id/searchText"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_results"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:dividerHeight="15dp" />
+
+</RelativeLayout>

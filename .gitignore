@@ -1,0 +1,8 @@
+.idea/
+.idea/*
+.idea/*.xml
+src/.idea/
+src/.idea/*
+src/**/.idea/*
+**/.idea/*
+src/.idea/*.xml
